@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+
+    <title> (仮)山田猫氏の日常　公式HP </title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="css3.css">
+    <link rel="stylesheet" href="css4.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
+        p {
+            font-family: 'Zen Maru Gothic', sans-serif;
+        }
+    </style>
+   
+
+</head>
+
+<body>
+
+         <div class="loader">
+              <p class="txt">なうろうでぃんぐ</p>
+            <img class="txt2" src="img/猫氏読書.png">
+            </div>
+
+<!-- ロード　-->
+
+<script>
+    $(function () {
+        function end_loader() {
+            $('.loader').fadeOut(800);
+        }
+        $(window).on('load', function () {
+            setTimeout(function () {
+                end_loader();
+                window.location.href = "https://yamada-neko3neko3.github.io/github.io-neko3/"; // 別の画面に移動
+            }, 3000);
+        });
+    });
+</script>
+</body>
+
+</html>
