@@ -717,3 +717,2198 @@ bottom: 0;
 
 
 }
+
+  /* デスクトップの画面サイズ */
+  @media (min-width: 769px)and  (max-width: 1180px) {
+    .container {
+      width: 80%;
+    }
+    .section {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    /* page1*/
+    .loader {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #000000;
+      z-index: 555;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader .txt {
+      position: absolute;
+      top: 10%;
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      animation: blink 1.5s infinite; /* 点滅アニメーションを設定 */
+    }
+    .txt2 {
+      position: absolute;
+      top: 20%;
+      width: 25%;
+      animation: blink 1.5s infinite; /* 点滅アニメーションを設定 */
+    }
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .instagram{
+      width: 7%;
+      position: absolute;
+      top: 1%;
+      right: 3%;
+    }
+
+    .charaA{
+      z-index: 10;
+      position: absolute;
+      width: 40%;
+      top: 15%;
+      right: 28%;
+      transform: translateY(10%);
+      opacity: 0; /* 初期状態は非表示 */
+      bottom: -50px; /* 下に50px移動 */
+      animation: fadein 10s ease forwards; /* 2秒かけてフェードイン */ 
+    }
+    @keyframes fadein {
+      from {
+        opacity: 0;
+        bottom: -50px;
+      }
+      to {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+    .back {
+      position: absolute;
+      width: 100%; /* 幅を100%に設定 */
+      height: 65%;
+      top: 0%;
+      left: 0%;
+      background-size: cover;      
+    }
+    .backplus1{
+        position: absolute;
+        width: 103%;
+        height: 65%;
+        top: 0%;
+        left: -3%;
+        background-size: cover;
+      }
+      .backplus1{
+        animation: poyoyon1 10s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards ;
+      }
+      @keyframes poyoyon1 {
+        0% {
+          transform: translateX(140px);
+          opacity: 0.5;
+        }
+        50% {
+          transform: translateX(0);
+        }
+        65% {
+          transform: translateX(30px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+        20%,100% {
+          opacity: 0.7;
+        }
+        
+      }
+      .backplus2{
+        position: absolute;
+        width: 103%;
+        height: 65%;
+        top: 0%;
+        left: -3%;
+        background-size: cover;
+      }
+      .backplus2{
+        animation: poyoyon2 10s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards ;
+      }
+      @keyframes poyoyon2 {
+        0% {
+          transform: translateX(-140px);
+          opacity: 0.5;
+        }
+        50% {
+          transform: translateX(0);
+        }
+        65% {
+          transform: translateX(-30px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+        20%,100% {
+          opacity: 0.7;
+        }
+      }
+
+
+    .back-in2a {
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 65%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2b {
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 130%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2c{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 195%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2d{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 260%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2e{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 325%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2f{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 380%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2g{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 445%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2h{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 545%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2i{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 645%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2j{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 745%;
+      left: -3%;
+      background-size: cover;
+    }
+
+    .back4{
+      position: absolute;
+      width: 103%;
+      height: 90%;
+      top: 295%;
+      left: -3%;
+      background-size: cover;
+    }
+    
+    .logo {
+      position: absolute;
+      position: fixed;
+        z-index: 100;
+      width: 30%; /* 幅を20%に設定 */
+      top: 0%;
+      left: 5%;
+    }
+    
+    .back2 {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      height: 10%;
+      left: 0;
+      z-index: 10;
+      border-bottom: solid 3px green;
+    }
+    
+    .message1{
+      position: absolute;
+      top: 15%;
+      left: 12%;
+      font-size: 28px;
+      z-index: 20;
+      color: white;
+text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+            -1px 1px 0 #040404, 1px -1px 0 #000000,
+            0px 1px 0 #000000,  0-1px 0 #000000,
+            -1px 0 0 #000000, 1px 0 0 #000000;
+    }
+    .message2{
+      position: absolute;
+      width: 70%;
+      top: 290%;
+      left: 16%;
+    }
+    
+    .cloud1{
+      position: relative;
+      width: 35%;
+      top: 38%;
+      left: 7%;
+    }
+    .cloud2{
+      position: relative;
+      width: 20%;
+      top: 18%;
+      right: -5%;
+    }
+    .cloud3{
+      position: absolute;
+      width: 50%;
+      right: -15%;
+    }
+      .idou{
+        z-index: -10;
+        position: absolute;
+      top: 5%;
+      animation-name:idou;
+      animation-duration:7s;
+      animation-timing-function:ease;
+      animation-iteration-count:infinite;
+      animation-direction:alternate;
+      } 
+      @keyframes idou{
+      100%{transform:translate(20%,0px);}
+      } 
+
+      .scrollanime {opacity: 0;} 
+      .fadeInDown {
+        z-index: 20;
+                position: absolute;
+                top: 105%;
+                width: 40%;
+          animation-name: fadeInDown;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+      }
+      @keyframes fadeInDown {
+          0% {
+              opacity: 0;         
+          }
+          100% {
+          opacity: 1;
+          transform: translate(0);
+          }
+      }
+      .updown {transform: translateY(-100px);}
+      .downup {transform: translateY(100px);}
+      .sect02{overflow: hidden;} 
+      .slide-right {transform: translateX(200px);}
+      .slide-left {transform: translateX(-200px);}
+  
+      #footer {
+        z-index: -10;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        bottom: 100px;
+        left: -1px;
+    }
+    #slide {
+        width: 100%;
+    }
+    .icon1 {
+      position: absolute;
+      top: 305%;
+      width: 30%;
+    }
+    .icon1:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon2{
+      position: absolute;
+      top: 305%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon2:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon3{
+      position: absolute;
+      top: 305%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon3:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon4{
+      position: absolute;
+      top: 345%;
+      width: 30%;
+    }
+    .icon4:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon5{
+      position: absolute;
+      top: 345%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon5:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon6{
+      position: absolute;
+      top: 345%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon6:hover {
+      transform: translateY(-5px);
+    }
+
+    .message3{
+      position: absolute;
+      top: 395%;
+      left: 7%;
+      font-size: 22px;
+    }
+
+    .icon1b {
+      position: absolute;
+      top: 105%;
+      width: 30%;
+    }
+    .icon1b:hover {
+      transform: translateY(-5px);
+    }
+    .icon2b{
+      position: absolute;
+      top: 105%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon2b:hover {
+      transform: translateY(-5px);
+    }
+    .icon3b{
+      position: absolute;
+      top: 105%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon3b:hover {
+      transform: translateY(-5px);
+    }
+    .icon4b{
+      position: absolute;
+      top: 165%;
+      width: 30%;
+    }
+    .icon4b:hover {
+      transform: translateY(-5px);
+    }
+    .icon5b{
+      position: absolute;
+      top: 165%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon5b:hover {
+      transform: translateY(-5px);
+    }
+    .icon6b{
+      position: absolute;
+      top: 165%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon6b:hover {
+      transform: translateY(-5px);
+    }
+
+    .message3b{
+      position: absolute;
+      top: 5%;
+      left: 7%;
+      font-size: 22px;
+    }
+    .message3c{
+      position: absolute;
+      top: 220%;
+      left: 7%;
+      font-size: 22px;
+    }
+
+/* page2 */
+    .back3 {
+      position: absolute;
+      width: 105%;
+      height: 120%;
+      top: 65%;
+      left: -3%;
+      background-size: cover;
+      
+    }
+    .chara1{
+      position: absolute;
+      width: 50%;
+      top: 5%;
+      left: 30%;
+    }
+     .move1{
+      position: absolute;
+      top: 70%;
+    }
+    .animation2{
+      position: relative;
+      width: 30%;
+      left: 3%;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-duration: 1.5s;
+      width: 228px;
+    }
+    .keyframe0{
+      animation-name: anim_po;
+      position: absolute;
+    }
+    @keyframes anim_po {
+      0% {
+        top: 0px;
+      }
+      100% {
+        top: 80px;
+      }
+    }
+
+    .art1{
+      position: absolute;
+      width: 20%;
+      z-index: 10;
+      top: 56%;
+      right: 7%;
+      border: 1px solid #ccc; /* 枠線の太さと色 */
+      padding: 5px; /* 画像と枠線の間の余白 */
+      display: inline-block; /* 画像を中央揃えするために必要 */
+    }
+    
+    .next2{
+      position: absolute;
+      width: 10%;
+      top: 33%;
+      right: 5%;
+    }
+    .page2coment{
+      position: absolute;
+      top: 40%;
+      left: 12%;
+      font-size:32px;
+      z-index: 10;
+    }
+    .name1{
+      font-size: 40px;
+    }
+    
+    .next3{
+      position: absolute;
+      width: 10%;
+      top: 33%;
+      right: 5%;
+}
+.return1{
+  position: absolute;
+  width: 10%;
+  top: 33%;
+  left: 5%;
+}
+
+
+/* banner1 */
+.renga{
+width:  102%;
+position: absolute;
+top: 55%;
+left: -2%;
+border-bottom:solid 3px brown; 
+}
+.banner1{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 78%;
+left: 20%;
+}
+.banner2{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 115%;
+left: 20%;
+}
+.banner3{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 150%;
+right: 20%;
+}
+.banner4{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 185%;
+right: 20%;
+}
+
+/* index2 */
+
+.animation{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 328px;
+  position: absolute;
+  right: 17%;
+  top: 17%;
+}
+.keyframe2{
+  animation-name: anim_h;
+}
+@keyframes anim_h {
+  0% {
+    transform: translate(0px, 0);
+  }
+  100% {
+    transform: translate(30px, 0);
+  }
+}
+
+.message4{
+  position: absolute;
+  top: 5%;
+  left: 18%;
+  font-size: 26px;
+  z-index: 20;
+  transform: translateY(10%);
+opacity: 0; /* 初期状態は非表示 */
+bottom: -50px; /* 下に50px移動 */
+animation: fadein 3s ease forwards; /* 2秒かけてフェードイン */ 
+color: white;
+text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+            -1px 1px 0 #040404, 1px -1px 0 #000000,
+            0px 1px 0 #000000,  0-1px 0 #000000,
+            -1px 0 0 #000000, 1px 0 0 #000000;
+}
+@keyframes fadein {
+from {
+opacity: 0;
+bottom: -50px;
+}
+to {
+opacity: 1;
+bottom: 0;
+}
+}
+
+.art2{
+  position: absolute;
+  width: 70%;
+  z-index: 10;
+  top: 80%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.art3{
+  position: absolute;
+  width: 70%;
+  top: 160%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art4{
+  position: absolute;
+  width: 70%;
+  top: 240%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art5{
+  position: absolute;
+  width: 70%;
+  top: 320%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art6{
+  position: absolute;
+  width: 70%;
+  top: 400%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art7{
+  position: absolute;
+  width: 70%;
+  top: 480%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art8{
+  position: absolute;
+  width: 70%;
+  top: 560%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art9{
+  position: absolute;
+  width: 70%;
+  top: 640%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art10{
+  position: absolute;
+  width: 70%;
+  top: 720%;
+  left: 10%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.message3b{
+  position: absolute;
+  top: 850%;
+  left: 3%;
+  font-size: 30px;
+  
+}
+
+}
+
+  /* デスクオーバーの画面サイズ */
+  @media (min-width: 1181px)and (max-width: 9999px){
+    .container {
+      width: 80%;
+    }
+    .section {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    /* page1*/
+    .loader {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #000000;
+      z-index: 555;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader .txt {
+      position: absolute;
+      top: 10%;
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      animation: blink 1.5s infinite; /* 点滅アニメーションを設定 */
+    }
+    .txt2 {
+      position: absolute;
+      top: 20%;
+      width: 25%;
+      animation: blink 1.5s infinite; /* 点滅アニメーションを設定 */
+    }
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    
+    .instagram{
+      width: 5%;
+      position: absolute;
+      top: 1%;
+      right: 3%;
+    }
+
+     .charaA{
+      z-index: 10;
+      position: absolute;
+      width: 30%;
+      top: 5%;
+      right: 33%;
+      transform: translateY(10%);
+      opacity: 0; /* 初期状態は非表示 */
+      bottom: -50px; /* 下に50px移動 */
+      animation: fadein 10s ease forwards; /* 2秒かけてフェードイン */ 
+    }
+    .back {
+      position: absolute;
+      width: 100%; /* 幅を100%に設定 */
+      height: 65%;
+      top: 0%;
+      left: 0;
+      background-size: cover;      
+    }
+    .backplus1{
+      position: absolute;
+      width: 103%;
+      height: 65%;
+      top: 0%;
+      left: -3%;
+      background-size: cover;
+    }
+    .backplus1{
+      animation: poyoyon1 10s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards ;
+    }
+    @keyframes poyoyon1 {
+      0% {
+        transform: translateX(140px);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateX(0);
+      }
+      65% {
+        transform: translateX(30px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+      20%,100% {
+        opacity: 0.7;
+      }
+      
+    }
+    .backplus2{
+      position: absolute;
+      width: 103%;
+      height: 65%;
+      top: 0%;
+      left: -3%;
+      background-size: cover;
+    }
+    .backplus2{
+      animation: poyoyon2 10s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards ;
+    }
+    @keyframes poyoyon2 {
+      0% {
+        transform: translateX(-140px);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateX(0);
+      }
+      65% {
+        transform: translateX(-30px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+      20%,100% {
+        opacity: 0.7;
+      }
+    }
+
+    .back-in2a {
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 65%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2b {
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 130%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2c{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 195%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2d{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 260%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2e{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 325%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2f{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 80%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2g{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 45%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2h{
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 45%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2i{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 100%;
+      top: 45%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2j{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 45%;
+      left: -3%;
+      background-size: cover;
+    }
+
+
+    .back4{
+      position: absolute;
+      width: 103%;
+      height: 110%;
+      top: 380%;
+      left: -3%;
+      background-size: cover;
+    }
+    .logo {
+      position: absolute;
+      position: fixed;
+        z-index: 100;
+      width: 30%; /* 幅を20%に設定 */
+      top: 0%;
+      left: 5%;
+    }
+    .back2 {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      height: 10%;
+      left: 0; 
+      z-index: 10;
+      border-bottom: solid 3px green;
+    }
+
+    .message1{
+      position: absolute;
+      top: 15%;
+      left: 12%;
+      font-size: 28px;
+      z-index: 20;
+      color: white;
+text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+            -1px 1px 0 #040404, 1px -1px 0 #000000,
+            0px 1px 0 #000000,  0-1px 0 #000000,
+            -1px 0 0 #000000, 1px 0 0 #000000;
+    }
+    .message2{
+      position: absolute;
+      width: 70%;
+      top: 354%;
+      left: 16%;
+    }
+    
+    .cloud1{
+      position: relative;
+      width: 35%;
+      top: 38%;
+      left: 7%;
+    }
+    .cloud2{
+      position: relative;
+      width: 20%;
+      top: 18%;
+      right: -5%;
+    }
+    .cloud3{
+      position: absolute;
+      width: 50%;
+      right: -15%;
+    }
+      .idou{
+        z-index: -10;
+        position: absolute;
+      top: 10%;
+      animation-name:idou;
+      animation-duration:7s;
+      animation-timing-function:ease;
+      animation-iteration-count:infinite;
+      animation-direction:alternate;
+      } 
+      @keyframes idou{
+      100%{transform:translate(20%,0px);}
+      } 
+
+      .scrollanime {opacity: 0;} 
+      .fadeInDown {
+        z-index: 20;
+                position: absolute;
+                top: 105%;
+                width: 50%;
+          animation-name: fadeInDown;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+      }
+      @keyframes fadeInDown {
+          0% {
+              opacity: 0;         
+          }
+          100% {
+          opacity: 1;
+          transform: translate(0);
+          }
+      }
+      .updown {transform: translateY(-100px);}
+      .downup {transform: translateY(100px);}
+      .sect02{overflow: hidden;} 
+      .slide-right {transform: translateX(200px);}
+      .slide-left {transform: translateX(-200px);}
+  
+  
+      #footer {
+        z-index: -10;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        bottom: 100px;
+        left: -1px;
+    }
+    #slide {
+        width: 100%;
+    }
+    .icon1 {
+      position: absolute;
+      top: 385%;
+      width: 30%;
+    }
+    .icon1:hover {
+      transform: translateY(-5px);
+    }
+    .icon2{
+      position: absolute;
+      top: 385%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon2:hover {
+      transform: translateY(-5px);
+    }
+    .icon3{
+      position: absolute;
+      top: 385%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon3:hover {
+      transform: translateY(-5px);
+    }
+    .icon4{
+      position: absolute;
+      top: 465%;
+      width: 30%;
+    }
+    .icon4:hover {
+      transform: translateY(-5px);
+    }
+    .icon5{
+      position: absolute;
+      top: 465%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon5:hover {
+      transform: translateY(-5px);
+    }
+    .icon6{
+      position: absolute;
+      top: 465%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon6:hover {
+      transform: translateY(-5px);
+    }
+
+    .message3{
+      position: absolute;
+      top: 555%;
+      left: 7%;
+      font-size: 22px;
+    }
+
+    .icon1b {
+      position: absolute;
+      top: 105%;
+      width: 30%;
+    }
+    .icon1b:hover {
+      transform: translateY(-5px);
+    }
+    .icon2b{
+      position: absolute;
+      top: 105%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon2b:hover {
+      transform: translateY(-5px);
+    }
+    .icon3b{
+      position: absolute;
+      top: 105%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon3b:hover {
+      transform: translateY(-5px);
+    }
+    .icon4b{
+      position: absolute;
+      top: 195%;
+      width: 30%;
+    }
+    .icon4b:hover {
+      transform: translateY(-5px);
+    }
+    .icon5b{
+      position: absolute;
+      top: 195%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon5b:hover {
+      transform: translateY(-5px);
+    }
+    .icon6b{
+      position: absolute;
+      top: 195%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon6b:hover {
+      transform: translateY(-5px);
+    }
+
+    .message3b{
+      position: absolute;
+      top: 255%;
+      left: 7%;
+      font-size: 22px;
+    }
+    .message3c{
+      position: absolute;
+      top: 270%;
+      left: 7%;
+      font-size: 22px;
+    }
+
+/* page2 */
+    .back3 {
+      position: absolute;
+      width: 105%;
+      height: 120%;
+      top: 65%;
+      left: -3%;
+      background-size: cover;
+      
+    }
+    .chara1{
+      position: absolute;
+      width: 30%;
+      top: 6%;
+      left: 35%;
+    }
+    .move1{
+      position: absolute;
+      top: 70%;
+    }
+    .animation2{
+      position: relative;
+      width: 30%;
+      left: 3%;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-duration: 1.5s;
+      width: 228px;
+    }
+    .keyframe0{
+      animation-name: anim_po;
+      position: absolute;
+    }
+    @keyframes anim_po {
+      0% {
+        top: 0px;
+      }
+      100% {
+        top: 80px;
+      }
+    }
+
+    .art1{
+      position: absolute;
+      width: 20%;
+      z-index: 10;
+      top: 50%;
+      right: 7%;
+      border: 1px solid #ccc; /* 枠線の太さと色 */
+      padding: 5px; /* 画像と枠線の間の余白 */
+      display: inline-block; /* 画像を中央揃えするために必要 */
+    }
+    
+    .next2{
+      position: absolute;
+      width: 10%;
+      top: 30%;
+      right: 5%;
+    }
+    .page2coment{
+      position: absolute;
+      top: 35%;
+      left: 12%;
+      font-size:32px;
+      z-index: 10;
+    }
+    .name1{
+      font-size: 40px;
+    }
+    
+    .next3{
+      position: absolute;
+      width: 10%;
+      top: 30%;
+      right: 5%;
+}
+.return1{
+  position: absolute;
+  width: 10%;
+  top: 30%;
+  left: 5%;
+}
+
+
+/* banner1 */
+.renga{
+width:  102%;
+height: 250%;
+position: absolute;
+top: 55%;
+left: -2%;
+border-bottom:solid 3px brown; 
+}
+.banner1{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 78%;
+left: 20%;
+}
+.banner2{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 135%;
+left: 20%;
+}
+.banner3{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 193%;
+right: 20%;
+}
+.banner4{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 250%;
+right: 20%;
+}
+
+
+
+/* index2 */
+
+.animation{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 328px;
+  position: absolute;
+  right: 17%;
+  top: 17%;
+}
+.keyframe2{
+  animation-name: anim_h;
+}
+@keyframes anim_h {
+  0% {
+    transform: translate(0px, 0);
+  }
+  100% {
+    transform: translate(30px, 0);
+  }
+}
+
+.message4{
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  font-size: 26px;
+  z-index: 20;
+  transform: translateY(10%);
+opacity: 0; /* 初期状態は非表示 */
+bottom: -50px; /* 下に50px移動 */
+animation: fadein 3s ease forwards; /* 2秒かけてフェードイン */ 
+color: white;
+text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+            -1px 1px 0 #040404, 1px -1px 0 #000000,
+            0px 1px 0 #000000,  0-1px 0 #000000,
+            -1px 0 0 #000000, 1px 0 0 #000000;
+}
+@keyframes fadein {
+from {
+opacity: 0;
+bottom: -50px;
+}
+to {
+opacity: 1;
+bottom: 0;
+}
+}
+
+.art2{
+  position: absolute;
+  width: 40%;
+  z-index: 10;
+  top: 80%;
+  left: 2;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.art3{
+  position: absolute;
+  width: 40%;
+  top: 80%;
+  right: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art4{
+  position: absolute;
+  width: 40%;
+  top: 140%;
+  left: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art5{
+  position: absolute;
+  width: 40%;
+  top: 140%;
+  right: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art6{
+  position: absolute;
+  width: 40%;
+  top: 200%;
+  left: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art7{
+  position: absolute;
+  width: 40%;
+  top: 200%;
+  right: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art8{
+  position: absolute;
+  width: 40%;
+  top: 260%;
+  left: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art9{
+  position: absolute;
+  width: 40%;
+  top: 260%;
+  right: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art10{
+  position: absolute;
+  width: 40%;
+  top: 320%;
+  left: 2%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.message3b{
+  position: absolute;
+  top: 460%;
+  left: 3%;
+  font-size: 30px;
+  
+}
+
+}
+
+
+  /* タブレットの画面サイズ */
+  @media (min-width: 481px) and (max-width: 768px){
+    .container {
+      width: 80%;
+    }
+    .section {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+   /* page1*/
+   .loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .txt {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    animation: blink 1.5s infinite; /* 点滅アニメーションを設定 */
+  }
+  .txt2 {
+    position: absolute;
+    top: 10%;
+    width: 25%;
+    animation: blink 1.5s infinite; /* 点滅アニメーションを設定 */
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+    .instagram{
+      width: 10%;
+      position: absolute;
+      top: 1%;
+      right: 3%;
+    }
+
+    .back {
+      position: absolute;
+      width: 103%;
+      height: 75%;
+      top: 0%;
+      left: -3%;
+      background-size: cover;
+    }
+    .backplus1{
+      position: absolute;
+      width: 103%;
+      height: 35%;
+      top: 10%;
+      left: -3%;
+      background-size: cover;
+    }
+    .backplus1{
+      animation: poyoyon1 10s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards ;
+    }
+    @keyframes poyoyon1 {
+      0% {
+        transform: translateX(140px);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateX(0);
+      }
+      65% {
+        transform: translateX(30px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+      20%,100% {
+        opacity: 0.7;
+      }
+      
+    }
+    .backplus2{
+      position: absolute;
+      width: 103%;
+      height: 35%;
+      top: 10%;
+      left: -3%;
+      background-size: cover;
+    }
+    .backplus2{
+      animation: poyoyon2 10s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards ;
+    }
+    @keyframes poyoyon2 {
+      0% {
+        transform: translateX(-140px);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translateX(0);
+      }
+      65% {
+        transform: translateX(-30px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+      20%,100% {
+        opacity: 0.7;
+      }
+    }
+     
+    .back-in2a {
+      position: absolute;
+      width: 103%;
+      height: 50%;
+      top: 55%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2b {
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 105%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2c{
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 165%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2d{
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 220%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2e{
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 275%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2f{
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 330%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2g{
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 385%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2h{
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 440%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2i{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 305%;
+      left: -3%;
+      background-size: cover;
+    }
+    .back-in2j{
+      z-index: -10;
+      position: absolute;
+      width: 103%;
+      height: 60%;
+      top: 340%;
+      left: -3%;
+      background-size: cover;
+    }
+
+
+
+
+    .back4{
+      position: absolute;
+      width: 103%;
+      height: 90%;
+      top: 185%;
+      left: -3%;
+      background-size: cover;
+    }
+    .logo {
+      position: absolute;
+      position: fixed;
+        z-index: 100;
+      width: 35%;
+      top: 2%;
+      left: 5%;
+    }
+    .back2 {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      height: 10%;
+      left: 0; 
+      z-index: 10;
+      border-bottom: solid 3px green;
+    }
+    .charaA{
+      z-index: 10;
+      position: absolute;
+      width: 65%;
+      top: 10%;
+      right: 15%;
+        transform: translateY(10%);
+        opacity: 0; /* 初期状態は非表示 */
+        bottom: -50px; /* 下に50px移動 */
+      animation: fadein 3s ease forwards; /* 2秒かけてフェードイン */ 
+    }
+    @keyframes fadein {
+      from {
+        opacity: 0;
+        bottom: -50px;
+      }
+      to {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+    
+    .message1{
+      position: absolute;
+      top: 20%;
+      left: 12%;
+      font-size: 20px;
+      z-index: 20;
+      color: white;
+text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+            -1px 1px 0 #040404, 1px -1px 0 #000000,
+            0px 1px 0 #000000,  0-1px 0 #000000,
+            -1px 0 0 #000000, 1px 0 0 #000000;
+    }
+    .message2{
+      position: absolute;
+      width: 90%;
+      top: 184%;
+      left: 6%;
+    }
+    
+    .cloud1{
+      position: relative;
+      width: 35%;
+      top: 38%;
+      left: 7%;
+    }
+    .cloud2{
+      position: relative;
+      width: 20%;
+      top: 18%;
+      right: -5%;
+    }
+    .cloud3{
+      position: absolute;
+      width: 50%;
+      right: -15%;
+    }
+      .idou{
+        z-index: -10;
+        position: absolute;
+      top: 5%;
+      animation-name:idou;
+      animation-duration:7s;
+      animation-timing-function:ease;
+      animation-iteration-count:infinite;
+      animation-direction:alternate;
+      } 
+      @keyframes idou{
+      100%{transform:translate(20%,0px);}
+      } 
+
+      .charaB{
+        z-index: 20;
+        position: absolute;
+        width: 45%;
+        top: 145%;
+      }
+  
+      #footer {
+        z-index: -10;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        bottom: 200px;
+        left: -1px;
+    }
+    #slide {
+        width: 100%;
+    }  
+    .icon1 {
+      position: absolute;
+      top: 205%;
+      width: 30%;
+    }
+    .icon2{
+      position: absolute;
+      top: 205%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon3{
+      position: absolute;
+      top: 205%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon4{
+      position: absolute;
+      top: 235%;
+      width: 30%;
+    }
+    .icon5{
+      position: absolute;
+      top: 235%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon6{
+      position: absolute;
+      top: 235%;
+      width: 30%;
+      left: 68%;
+    }
+
+    .message3{
+      position: absolute;
+      top: 275%;
+      left: 7%;
+      font-size: 22px;
+    }
+
+    /* page2 */
+    .icon1b {
+      position: absolute;
+      top: 85%;
+      width: 30%;
+    }
+    .icon2b{
+      position: absolute;
+      top: 85%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon3b{
+      position: absolute;
+      top: 85%;
+      width: 30%;
+      left: 68%;
+    }
+    .icon4b{
+      position: absolute;
+      top: 115%;
+      width: 30%;
+    }
+    .icon5b{
+      position: absolute;
+      top: 115%;
+      width: 30%;
+      left: 35%;
+    }
+    .icon6b{
+      position: absolute;
+      top: 115%;
+      width: 30%;
+      left: 68%;
+    }
+
+    .message3b{
+      position: absolute;
+      top: 155%;
+      left: 7%;
+      font-size: 22px;
+    }
+    .message3c{
+      position: absolute;
+      top: 180%;
+      left: 7%;
+      font-size: 22px;
+    }
+
+
+    .back3 {
+      position: absolute;
+      width: 105%;
+      height: 100%;
+      top: 45%;
+      left: -3%;
+      background-size: cover;
+      
+    }
+    .chara1{
+      position: absolute;
+      width: 50%;
+      top: 16%;
+      left: 28%;
+    }
+    .move1{
+      position: absolute;
+      top: 55%;
+    }
+    .animation2{
+      left: 3%;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-duration: 1.5s;
+      width: 228px;
+    }
+    .keyframe0{
+      animation-name: anim_po;
+      position: absolute;
+    }
+    @keyframes anim_po {
+      0% {
+        top: 0px;
+      }
+      100% {
+        top: 80px;
+      }
+    }
+
+    .art1{
+      position: absolute;
+      width: 20%;
+      z-index: 10;
+      top: 50%;
+      right: 7%;
+      border: 1px solid #ccc; /* 枠線の太さと色 */
+      padding: 5px; /* 画像と枠線の間の余白 */
+      display: inline-block; /* 画像を中央揃えするために必要 */
+    }
+    
+    .next2{
+      position: absolute;
+      width: 10%;
+      top: 33%;
+      right: 5%;
+    }
+    .page2coment{
+      position: absolute;
+      top: 42%;
+      left: 12%;
+      font-size:22px;
+      z-index: 10;
+    }
+    .name1{
+      font-size: 30px;
+    }
+    
+    .next3{
+      position: absolute;
+      width: 10%;
+      top: 33%;
+      right: 5%;
+}
+.return1{
+  position: absolute;
+  width: 10%;
+  top: 33%;
+  left: 5%;
+}
+
+
+/* banner1 */
+.renga{
+width:  102%;
+height: 125%;
+position: absolute;
+top: 55%;
+left: -2%;
+border-bottom:solid 3px brown; 
+}
+.banner1{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 70%;
+left: 20%;
+}
+.banner2{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 100%;
+left: 20%;
+}
+.banner3{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 130%;
+right: 20%;
+}
+.banner4{
+width: 60%;
+z-index: 10;
+position: absolute;
+top: 160%;
+right: 20%;
+}
+
+/* index2 */
+
+.animation{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 228px;
+  position: absolute;
+  right: 17%;
+  top: 20%;
+}
+.keyframe2{
+  animation-name: anim_h;
+}
+@keyframes anim_h {
+  0% {
+    transform: translate(0px, 0);
+  }
+  100% {
+    transform: translate(30px, 0);
+  }
+}
+
+.message4{
+  position: absolute;
+  top: 5%;
+  left: 18%;
+  font-size: 26px;
+  z-index: 20;
+  transform: translateY(10%);
+opacity: 0; /* 初期状態は非表示 */
+bottom: -50px; /* 下に50px移動 */
+animation: fadein 3s ease forwards; /* 2秒かけてフェードイン */ 
+color: white;
+text-shadow:1px 1px 0 #000000, -1px -1px 0 #000000,
+            -1px 1px 0 #040404, 1px -1px 0 #000000,
+            0px 1px 0 #000000,  0-1px 0 #000000,
+            -1px 0 0 #000000, 1px 0 0 #000000;
+}
+@keyframes fadein {
+from {
+opacity: 0;
+bottom: -50px;
+}
+to {
+opacity: 1;
+bottom: 0;
+}
+}
+
+.art2{
+  position: absolute;
+  width: 60%;
+  z-index: 10;
+  top: 60%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+
+}
+
+.art3{
+  position: absolute;
+  width: 60%;
+  top: 110%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art4{
+  position: absolute;
+  width: 60%;
+  top: 160%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art5{
+  position: absolute;
+  width: 60%;
+  top: 210%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art6{
+  position: absolute;
+  width: 60%;
+  top: 260%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art7{
+  position: absolute;
+  width: 60%;
+  top: 310%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art8{
+  position: absolute;
+  width: 60%;
+  top: 360%;
+  left: -1%;
+  
+}
+.art9{
+  position: absolute;
+  width: 60%;
+  top: 410%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.art10{
+  position: absolute;
+  width: 60%;
+  top: 460%;
+  border: double 10px #cd7000;
+  border-bottom: solid 5px black;
+  padding: 5px;
+  background: #893901;/*背景色*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+
+.message3b{
+  position: absolute;
+  top: 530%;
+  left: 3%;
+  font-size: 24px;
+  
+}
+
+}
